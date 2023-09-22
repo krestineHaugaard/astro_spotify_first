@@ -1,0 +1,24 @@
+---
+import Logo from "./Logo.astro";
+import NavigationInHeader from "./Navigation_in_header.astro";
+import CreatePlaylist from "./Create_playlist.astro";
+---
+
+<article>
+    <Logo/>
+    <NavigationInHeader/>
+    <CreatePlaylist/>
+</article>
+
+
+<style>
+
+    article{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        gap: 35px;
+    }
+
+</style>

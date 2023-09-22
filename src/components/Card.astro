@@ -1,0 +1,36 @@
+--- 
+const title = Astro.props.title;
+const text = Astro.props.text;
+--- 
+
+<article>
+    <div>
+        <slot/>
+        <h3>{title}</h3>
+        <p>{text}</p>
+    </div>
+</article>
+
+
+
+
+<style>
+
+    article{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100px;
+        background-color: rgb(32, 32, 32);
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    h3{
+        color: rgb(243, 243, 243);
+    }
+
+    p{
+        color: rgb(172, 172, 172);
+    }
+</style>

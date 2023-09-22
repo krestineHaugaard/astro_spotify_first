@@ -1,0 +1,21 @@
+---
+import Card from "../components/Card.astro";
+---
+
+<article>
+    <Card title="Et stykke musik 1" text="Hej med dig, og farvel igen"><img src="https://picsum.photos/id/65/150/150" alt="playlist picture"></Card>
+    <Card title="Et stykke musik 2" text="Pandekager kan altid spises på en fredag"><img src="https://picsum.photos/id/68/150/150" alt="playlist picture"></Card>
+    <Card title="Et stykke musik 3" text="Puha, snart weekend igen, det glæder jeg mig til"><img src="https://picsum.photos/id/76/150/150" alt="playlist picture"></Card>
+    <Card title="Et stykke musik 4" text="Det her astro er ikke så svært igen"><img src="https://picsum.photos/id/240/150/150" alt="playlist picture"></Card>
+    <Card title="Et stykke musik 5" text="Og det dælme smart, når det skal gå hurtigt"><img src="https://picsum.photos/id/331/150/150" alt="playlist picture"></Card>
+</article>
+
+<style>
+    article{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    </style>

@@ -1,0 +1,30 @@
+---
+const playlist_name = Astro.props.playlist_name;
+--- 
+
+<article>
+    <h2>{playlist_name}</h2>
+    <a href="#">Show all</a>
+</article>
+
+<style>
+    article{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h2{
+        color:rgb(255, 253, 250);
+    }
+    
+    a{
+        text-decoration: none;
+        color: rgb(255,253,250);
+    }
+    
+    a:hover{
+        text-decoration:underline;
+    }
+    </style>

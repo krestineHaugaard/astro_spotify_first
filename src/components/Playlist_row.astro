@@ -1,0 +1,27 @@
+---
+import PlaylistNav from "../components/Playlist_nav.astro";
+import Card_row from "../components/Card_row.astro"
+---
+
+<article>
+<PlaylistNav playlist_name="Fokus"/>
+<Card_row/>
+</article>
+<article>
+<PlaylistNav playlist_name="Hip hop"/>
+<Card_row/>
+</article>
+<article>
+<PlaylistNav playlist_name="Rock og rull"/>
+<Card_row/>
+</article>
+
+<style>
+article{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 40px;
+    gap: 10px;
+    background-color: rgb(24, 24, 24);
+}
+</style>
