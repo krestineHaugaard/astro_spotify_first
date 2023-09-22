@@ -1,10 +1,12 @@
 ---
 import BackAndForwardIcons from "./Back_and_forward_icons.astro";
 import NavigationsButtonstyleLinks from "./Navigations_buttonstyle_links.astro";
+const hasSearch = Astro.props; 
 ---
 
 <article>
     <BackAndForwardIcons/>
+    {hasSearch && <input type="text" />}
     <NavigationsButtonstyleLinks/>
 </article>
 

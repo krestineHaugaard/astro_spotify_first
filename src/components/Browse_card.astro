@@ -1,9 +1,11 @@
 ---
 const headline = Astro.props.headline;
+const showNew = Astro.props.showNew;
 ---
 
 <article>
     <h3>{headline}</h3>
+    {showNew && <p>New content!</p>}
 </article>
 
 
@@ -14,11 +16,20 @@ const headline = Astro.props.headline;
         height: 250px;
         width: 250px;
         border-radius: 5px;
+        display: flex;
+        flex-direction: column;
     }
 
     h3{
-        color: rgb(255, 255, 255);
+        color: rgb(212, 212, 212);
         padding: 10px 20px;
+    }
+
+    p{
+        color: rgb(255, 255, 255);
+        background-color: rgb(51, 100, 62);
+        padding: 20px 20px;
+        text-align: center;
     }
 
 </style>
