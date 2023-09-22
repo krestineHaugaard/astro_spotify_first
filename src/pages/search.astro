@@ -1,0 +1,28 @@
+---
+import Mainlayout from "../layouts/MainLayout.astro";
+import BrowscardFlex from "../components/BrowscardFlex.astro";
+import "../styles/style.css";
+---
+
+<Mainlayout>
+
+    <article>
+        <h2>Browse all</h2>
+        <BrowscardFlex/>
+    </article>
+
+    <style>
+        article{
+            display: flex;
+            flex-direction: column;
+            padding: 25px 40px;
+            gap: 10px;
+            background-color: rgb(24, 24, 24);
+        }
+
+        h2{
+        color:rgb(255, 253, 250);
+        }
+    </style>
+
+</Mainlayout>

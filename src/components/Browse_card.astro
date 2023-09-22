@@ -1,0 +1,24 @@
+---
+const headline = Astro.props.headline;
+---
+
+<article>
+    <h3>{headline}</h3>
+</article>
+
+
+<style>
+
+    article{
+        background-color: rgb(53, 80, 59);
+        height: 250px;
+        width: 250px;
+        border-radius: 5px;
+    }
+
+    h3{
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+    }
+
+</style>
